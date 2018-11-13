@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View 1-->
+        <!--Controller Avec Table View-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="ControllerAvecTableView" customModule="Calanques" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4UN-uI-zjg">
-                                <rect key="frame" x="10" y="100" width="355" height="508"/>
+                                <rect key="frame" x="10" y="144" width="355" height="464"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Alternative" rowHeight="198" id="Nbi-nK-q9l" customClass="CalanqueCellAlternate" customModule="Calanques" customModuleProvider="target">
@@ -90,7 +90,7 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visiter les calanques" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6q-cA-Vr3">
-                                <rect key="frame" x="10" y="40" width="355" height="30"/>
+                                <rect key="frame" x="10" y="84" width="355" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="06o-eM-nEh"/>
                                 </constraints>
@@ -111,16 +111,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Table View 1" image="list" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" id="9p7-TQ-ThW"/>
                     <connections>
                         <outlet property="tableView" destination="4UN-uI-zjg" id="lYw-rX-Xk0"/>
+                        <segue destination="MOB-bM-Lf7" kind="show" identifier="detail" id="zfC-Wn-LoG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="-828.03598200899557"/>
+            <point key="canvasLocation" x="1688.8" y="-828.03598200899557"/>
         </scene>
-        <!--Carte-->
+        <!--Controller Avec Carte-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="ControllerAvecCarte" customModule="Calanques" customModuleProvider="target" sceneMemberID="viewController">
@@ -130,13 +131,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Carte" image="earth" id="cPa-gy-q4n"/>
+                    <navigationItem key="navigationItem" id="YfE-Xy-Kr2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="851"/>
+            <point key="canvasLocation" x="1688.8" y="850.52473763118451"/>
         </scene>
-        <!--Table View 2-->
+        <!--Table View Integre Controller-->
         <scene sceneID="Bdr-1b-1bM">
             <objects>
                 <tableViewController id="X8m-F2-jBw" customClass="TableViewIntegreController" customModule="Calanques" customModuleProvider="target" sceneMemberID="viewController">
@@ -208,11 +209,57 @@
                             <outlet property="delegate" destination="X8m-F2-jBw" id="ZB4-li-61n"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Table View 2" image="list" id="O97-Uz-sXb"/>
+                    <navigationItem key="navigationItem" id="z0M-t4-Okg"/>
+                    <connections>
+                        <segue destination="MOB-bM-Lf7" kind="show" identifier="detail" id="0jl-qf-I77"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="haL-Xw-15Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="853.60000000000002" y="-0.44977511244377816"/>
+            <point key="canvasLocation" x="1792.8" y="-0.44977511244377816"/>
+        </scene>
+        <!--Detail Controller-->
+        <scene sceneID="pEd-ut-Rmc">
+            <objects>
+                <viewController id="MOB-bM-Lf7" customClass="DetailController" customModule="Calanques" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TJp-7I-G0x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pzb-1k-ujW" customClass="ImageRonds" customModule="Calanques" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="74" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="6ep-Px-0P1"/>
+                                    <constraint firstAttribute="width" constant="200" id="Yni-Z1-LIf"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="opb-no-wqK">
+                                <rect key="frame" x="16" y="284" width="343" height="324"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="opb-no-wqK" firstAttribute="top" secondItem="pzb-1k-ujW" secondAttribute="bottom" constant="10" id="M8E-PN-grk"/>
+                            <constraint firstItem="AkA-T8-RDL" firstAttribute="bottom" secondItem="opb-no-wqK" secondAttribute="bottom" constant="10" id="QtY-qJ-Q9C"/>
+                            <constraint firstItem="pzb-1k-ujW" firstAttribute="top" secondItem="AkA-T8-RDL" secondAttribute="top" constant="10" id="SPa-Jz-prL"/>
+                            <constraint firstItem="AkA-T8-RDL" firstAttribute="trailing" secondItem="opb-no-wqK" secondAttribute="trailing" constant="16" id="gE6-sh-8N1"/>
+                            <constraint firstItem="opb-no-wqK" firstAttribute="leading" secondItem="AkA-T8-RDL" secondAttribute="leading" constant="16" id="gzG-RO-0Gg"/>
+                            <constraint firstItem="pzb-1k-ujW" firstAttribute="centerX" secondItem="TJp-7I-G0x" secondAttribute="centerX" id="oj8-rm-7jI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AkA-T8-RDL"/>
+                    </view>
+                    <connections>
+                        <outlet property="calanqueImage" destination="pzb-1k-ujW" id="RLY-zd-xqN"/>
+                        <outlet property="textView" destination="opb-no-wqK" id="fws-yH-jYh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kEQ-Pp-LYZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2796" y="-0.44977511244377816"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -224,14 +271,71 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="X8m-F2-jBw" kind="relationship" relationship="viewControllers" id="dCD-2X-t8m"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="JWW-Ys-wTv" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="hYC-D1-bEM" kind="relationship" relationship="viewControllers" id="dCD-2X-t8m"/>
+                        <segue destination="lnQ-05-2Ka" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Table View 1-->
+        <scene sceneID="8Mk-im-fGd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JWW-Ys-wTv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Table View 1" image="list" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vk1-kW-1Dp">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="0tZ-Ao-G4N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XsM-Qb-ukI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="-828.03598200899557"/>
+        </scene>
+        <!--Table View 2-->
+        <scene sceneID="xvR-kk-HOJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hYC-D1-bEM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Table View 2" image="list" id="O97-Uz-sXb"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZWc-tL-qtF">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="X8m-F2-jBw" kind="relationship" relationship="rootViewController" id="qPz-dW-Spg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DGx-a8-exN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="853.60000000000002" y="-0.44977511244377816"/>
+        </scene>
+        <!--Carte-->
+        <scene sceneID="p9M-H5-8mt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lnQ-05-2Ka" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Carte" image="earth" id="cPa-gy-q4n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l5a-ja-dJF">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="3Xj-Gc-103"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X0u-pz-Jbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="850.52473763118451"/>
         </scene>
     </scenes>
     <resources>
@@ -239,4 +343,7 @@
         <image name="earth" width="25.600000381469727" height="25.600000381469727"/>
         <image name="list" width="25.600000381469727" height="25.600000381469727"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="0jl-qf-I77"/>
+    </inferredMetricsTieBreakers>
 </document>

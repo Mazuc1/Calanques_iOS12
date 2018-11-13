@@ -19,6 +19,7 @@
 		CF3E200B219AD7D100721CB8 /* CalanqueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3E200A219AD7D100721CB8 /* CalanqueCell.swift */; };
 		CF3E200D219ADB2600721CB8 /* ImageRonds.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3E200C219ADB2600721CB8 /* ImageRonds.swift */; };
 		CF3E200F219AE01400721CB8 /* CalanqueCellAlternate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3E200E219AE01400721CB8 /* CalanqueCellAlternate.swift */; };
+		CF438D63219AFB2400CB63EC /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF438D62219AFB2400CB63EC /* DetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		CF3E200A219AD7D100721CB8 /* CalanqueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCell.swift; sourceTree = "<group>"; };
 		CF3E200C219ADB2600721CB8 /* ImageRonds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRonds.swift; sourceTree = "<group>"; };
 		CF3E200E219AE01400721CB8 /* CalanqueCellAlternate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCellAlternate.swift; sourceTree = "<group>"; };
+		CF438D62219AFB2400CB63EC /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				CF3E2004219AD27E00721CB8 /* ControllerAvecTableView.swift */,
 				CF3E2006219AD28D00721CB8 /* ControllerAvecCarte.swift */,
 				CF3E2008219AD2A700721CB8 /* TableViewIntegreController.swift */,
+				CF438D62219AFB2400CB63EC /* DetailController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				CF3E200D219ADB2600721CB8 /* ImageRonds.swift in Sources */,
 				CF3E2007219AD28D00721CB8 /* ControllerAvecCarte.swift in Sources */,
 				CF3E2005219AD27E00721CB8 /* ControllerAvecTableView.swift in Sources */,
+				CF438D63219AFB2400CB63EC /* DetailController.swift in Sources */,
 				CF3E2001219AD09A00721CB8 /* Calanque.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
