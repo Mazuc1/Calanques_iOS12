@@ -17,14 +17,108 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4UN-uI-zjg">
+                                <rect key="frame" x="10" y="100" width="355" height="508"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Alternative" rowHeight="198" id="Nbi-nK-q9l" customClass="CalanqueCellAlternate" customModule="Calanques" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="355" height="198"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nbi-nK-q9l" id="3js-Rx-Pzc">
+                                            <rect key="frame" x="0.0" y="0.0" width="355" height="198"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marseilleveyre" translatesAutoresizingMaskIntoConstraints="NO" id="nP0-JW-WxU">
+                                                    <rect key="frame" x="15" y="11" width="325" height="176"/>
+                                                </imageView>
+                                                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIP-Tr-z7D">
+                                                    <rect key="frame" x="15" y="127" width="325" height="60"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WdH-6w-aK7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="325" height="60"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="tE1-R4-Byo">
+                                                                <rect key="frame" x="0.0" y="0.0" width="325" height="60"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="60" id="6s9-ae-Bk8"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lsE-RI-0Kg">
+                                                                <rect key="frame" x="0.0" y="0.0" width="325" height="60"/>
+                                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="fFF-zq-jFP">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="325" height="60"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                </view>
+                                                                <vibrancyEffect>
+                                                                    <blurEffect style="light"/>
+                                                                </vibrancyEffect>
+                                                            </visualEffectView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="tE1-R4-Byo" secondAttribute="trailing" id="FE7-zO-5dK"/>
+                                                            <constraint firstItem="tE1-R4-Byo" firstAttribute="leading" secondItem="WdH-6w-aK7" secondAttribute="leading" id="XzJ-Hy-PgJ"/>
+                                                            <constraint firstAttribute="bottom" secondItem="tE1-R4-Byo" secondAttribute="bottom" id="ztf-nS-Ndu"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="noo-r0-tIv"/>
+                                                    </constraints>
+                                                    <blurEffect style="light"/>
+                                                </visualEffectView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nP0-JW-WxU" firstAttribute="top" secondItem="3js-Rx-Pzc" secondAttribute="topMargin" id="0cc-ay-LjP"/>
+                                                <constraint firstItem="hIP-Tr-z7D" firstAttribute="leading" secondItem="3js-Rx-Pzc" secondAttribute="leadingMargin" id="3PV-hF-snk"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="nP0-JW-WxU" secondAttribute="trailing" id="CM5-e7-TUR"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="nP0-JW-WxU" secondAttribute="bottom" id="TfH-4a-N4X"/>
+                                                <constraint firstItem="hIP-Tr-z7D" firstAttribute="trailing" secondItem="3js-Rx-Pzc" secondAttribute="trailingMargin" id="UUB-GB-lGU"/>
+                                                <constraint firstItem="hIP-Tr-z7D" firstAttribute="bottom" secondItem="3js-Rx-Pzc" secondAttribute="bottomMargin" id="qH2-Sb-6G8"/>
+                                                <constraint firstItem="nP0-JW-WxU" firstAttribute="leading" secondItem="3js-Rx-Pzc" secondAttribute="leadingMargin" id="vQ6-EZ-jmk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="calanqueImage" destination="nP0-JW-WxU" id="bNE-BR-w6t"/>
+                                            <outlet property="nomLabel" destination="tE1-R4-Byo" id="FEJ-Ld-Egb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visiter les calanques" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6q-cA-Vr3">
+                                <rect key="frame" x="10" y="40" width="355" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="06o-eM-nEh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4UN-uI-zjg" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="10" id="9Fd-dA-H75"/>
+                            <constraint firstItem="J6q-cA-Vr3" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="10" id="YHi-5p-GzU"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="J6q-cA-Vr3" secondAttribute="trailing" constant="10" id="Ylg-Ex-LnW"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="4UN-uI-zjg" secondAttribute="trailing" constant="10" id="cCs-df-XsA"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="4UN-uI-zjg" secondAttribute="bottom" constant="10" id="cfD-Hv-fsg"/>
+                            <constraint firstItem="J6q-cA-Vr3" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="20" id="p6n-wB-cgC"/>
+                            <constraint firstItem="4UN-uI-zjg" firstAttribute="top" secondItem="J6q-cA-Vr3" secondAttribute="bottom" constant="30" id="pfI-qd-LeK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Table View 1" image="list" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="tableView" destination="4UN-uI-zjg" id="lYw-rX-Xk0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-828"/>
+            <point key="canvasLocation" x="749.60000000000002" y="-828.03598200899557"/>
         </scene>
         <!--Carte-->
         <scene sceneID="wg7-f3-ORb">
@@ -66,7 +160,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="154.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o4B-T7-aGW">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o4B-T7-aGW">
                                             <rect key="frame" x="0.0" y="54.5" width="375" height="100"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="NNj-oo-jjc">
@@ -141,6 +235,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Marseilleveyre" width="614.4000244140625" height="409.67999267578125"/>
         <image name="earth" width="25.600000381469727" height="25.600000381469727"/>
         <image name="list" width="25.600000381469727" height="25.600000381469727"/>
     </resources>

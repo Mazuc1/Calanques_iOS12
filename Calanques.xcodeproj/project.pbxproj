@@ -18,6 +18,7 @@
 		CF3E2009219AD2A700721CB8 /* TableViewIntegreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3E2008219AD2A700721CB8 /* TableViewIntegreController.swift */; };
 		CF3E200B219AD7D100721CB8 /* CalanqueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3E200A219AD7D100721CB8 /* CalanqueCell.swift */; };
 		CF3E200D219ADB2600721CB8 /* ImageRonds.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3E200C219ADB2600721CB8 /* ImageRonds.swift */; };
+		CF3E200F219AE01400721CB8 /* CalanqueCellAlternate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3E200E219AE01400721CB8 /* CalanqueCellAlternate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		CF3E2008219AD2A700721CB8 /* TableViewIntegreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewIntegreController.swift; sourceTree = "<group>"; };
 		CF3E200A219AD7D100721CB8 /* CalanqueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCell.swift; sourceTree = "<group>"; };
 		CF3E200C219ADB2600721CB8 /* ImageRonds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRonds.swift; sourceTree = "<group>"; };
+		CF3E200E219AE01400721CB8 /* CalanqueCellAlternate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCellAlternate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				CF3E200A219AD7D100721CB8 /* CalanqueCell.swift */,
 				CF3E200C219ADB2600721CB8 /* ImageRonds.swift */,
+				CF3E200E219AE01400721CB8 /* CalanqueCellAlternate.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				CF3E1FEA219ACD2200721CB8 /* AppDelegate.swift in Sources */,
 				CF3E200B219AD7D100721CB8 /* CalanqueCell.swift in Sources */,
 				CF3E2003219AD1A200721CB8 /* CalanqueCollection.swift in Sources */,
+				CF3E200F219AE01400721CB8 /* CalanqueCellAlternate.swift in Sources */,
 				CF3E200D219ADB2600721CB8 /* ImageRonds.swift in Sources */,
 				CF3E2007219AD28D00721CB8 /* ControllerAvecCarte.swift in Sources */,
 				CF3E2005219AD27E00721CB8 /* ControllerAvecTableView.swift in Sources */,
